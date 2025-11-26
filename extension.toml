@@ -2,6 +2,9 @@ id = "es7-react-js-snippets"
 name = "ES7+ React/Redux/React-Native/JavaScript/TypeScript snippets"
 version = "0.0.1"
 schema_version = 1
+
 authors = ["Chirag Saxena"]
 description = "A collection of useful ES7+ React/Redux/React-Native/JavaScript/TypeScript snippets to speed up your development."
 repository = "https://github.com/allindiacoderlife/zed-react-javascript-snippets.git"
+
+snippets = "./snippets/javascript.json"
