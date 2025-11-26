@@ -266,114 +266,82 @@
   },
   "If the specified expression is false, the message is written to the console along with a stack trace": {
     "prefix": "cas",
-    "body": [
-      "console.assert(${1:first}, ${2:second})"
-    ],
+    "body": ["console.assert(${1:first}, ${2:second})"],
     "description": "If the specified expression is false, the message is written to the console along with a stack trace"
   },
   "Clears the console": {
     "prefix": "ccl",
-    "body": [
-      "console.clear()"
-    ],
+    "body": ["console.clear()"],
     "description": "Clears the console"
   },
   "Writes the the number of times that count() has been invoked at the same line and with the same label": {
     "prefix": "cco",
-    "body": [
-      "console.count(${1:first})"
-    ],
+    "body": ["console.count(${1:first})"],
     "description": "Writes the the number of times that count() has been invoked at the same line and with the same label"
   },
   "Prints a JavaScript representation of the specified object": {
     "prefix": "cdi",
-    "body": [
-      "console.dir(${1:first})"
-    ],
+    "body": ["console.dir(${1:first})"],
     "description": "Prints a JavaScript representation of the specified object"
   },
   "Displays a message in the console and also includes a stack trace from where the method was called": {
     "prefix": "cer",
-    "body": [
-      "console.error(${1:first})"
-    ],
+    "body": ["console.error(${1:first})"],
     "description": "Displays a message in the console and also includes a stack trace from where the method was called"
   },
   "Groups and indents all following output by an additional level, until console.groupEnd() is called.": {
     "prefix": "cgr",
-    "body": [
-      "console.group('${1:first}')"
-    ],
+    "body": ["console.group('${1:first}')"],
     "description": "Groups and indents all following output by an additional level, until console.groupEnd() is called."
   },
   "Closes out the corresponding console.group().": {
     "prefix": "cge",
-    "body": [
-      "console.groupEnd()"
-    ],
+    "body": ["console.groupEnd()"],
     "description": "Closes out the corresponding console.group()."
   },
   "Displays a message in the console": {
     "prefix": "clg",
-    "body": [
-      "console.log(${1:first})"
-    ],
+    "body": ["console.log(${1:first})"],
     "description": "Displays a message in the console"
   },
   "Prints a stack trace from the point where the method was called": {
     "prefix": "ctr",
-    "body": [
-      "console.trace(${1:first})"
-    ],
+    "body": ["console.trace(${1:first})"],
     "description": "Prints a stack trace from the point where the method was called"
   },
   "Logs property with name.": {
     "prefix": "clo",
-    "body": [
-      "console.log('${1:first}', ${1:first})"
-    ],
+    "body": ["console.log('${1:first}', ${1:first})"],
     "description": "Logs property with name."
   },
   "Logs stringified JSON property with name.": {
     "prefix": "clj",
-    "body": [
-      "console.log('${1:first}', JSON.stringify(${1:first}, null, 2))"
-    ],
+    "body": ["console.log('${1:first}', JSON.stringify(${1:first}, null, 2))"],
     "description": "Logs stringified JSON property with name."
   },
   "Console time wrapper": {
     "prefix": "ctm",
-    "body": [
-      "console.time('${1:first}')"
-    ],
+    "body": ["console.time('${1:first}')"],
     "description": "Console time wrapper"
   },
   "Console time end wrapper": {
     "prefix": "cte",
-    "body": [
-      "console.timeEnd('${1:first}')"
-    ],
+    "body": ["console.timeEnd('${1:first}')"],
     "description": "Console time end wrapper"
   },
   "Displays a message in the console but also displays a yellow warning icon along with the logged message": {
     "prefix": "cwa",
-    "body": [
-      "console.warn(${1:first})"
-    ],
+    "body": ["console.warn(${1:first})"],
     "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message"
   },
   "Displays a message in the console but also displays a blue information icon along with the logged message": {
     "prefix": "cin",
-    "body": [
-      "console.info(${1:first})"
-    ],
+    "body": ["console.info(${1:first})"],
     "description": "Displays a message in the console but also displays a blue information icon along with the logged message"
   },
   "Logs table to console": {
     "prefix": "ctl",
-    "body": [
-      "console.table([${1:first}])"
-    ],
+    "body": ["console.table([${1:first}])"],
     "description": "Logs table to console"
   },
   "Use Callback": {
@@ -391,9 +359,7 @@
   },
   "Use Context": {
     "prefix": "useContextSnippet",
-    "body": [
-      "const ${1:first} = useContext(${2:second})"
-    ],
+    "body": ["const ${1:first} = useContext(${2:second})"],
     "description": "Use Context"
   },
   "Use Effect": {
@@ -438,9 +404,7 @@
   },
   "Use Memo": {
     "prefix": "useMemoSnippet",
-    "body": [
-      "useMemo(() => ${1:first}, [${2:second}])"
-    ],
+    "body": ["useMemo(() => ${1:first}, [${2:second}])"],
     "description": "Use Memo"
   },
   "Use Reducer": {
@@ -452,9 +416,7 @@
   },
   "Use Ref": {
     "prefix": "useRefSnippet",
-    "body": [
-      "const ${1:first} = useRef(${2:second})"
-    ],
+    "body": ["const ${1:first} = useRef(${2:second})"],
     "description": "Use Ref"
   },
   "Use State": {
@@ -466,16 +428,12 @@
   },
   "Import As": {
     "prefix": "ima",
-    "body": [
-      "import { ${2:second} as ${3:third} } from '${1:first}'"
-    ],
+    "body": ["import { ${2:second} as ${3:third} } from '${1:first}'"],
     "description": "Import As"
   },
   "Import Browser Router": {
     "prefix": "imbr",
-    "body": [
-      "import { BrowserRouter as Router } from 'react-router-dom'"
-    ],
+    "body": ["import { BrowserRouter as Router } from 'react-router-dom'"],
     "description": "Import Browser Router"
   },
   "Import Browser Router With Route And Nav Link": {
@@ -488,51 +446,37 @@
   },
   "Import Destructing": {
     "prefix": "imd",
-    "body": [
-      "import { ${2:second} } from '${1:first}'"
-    ],
+    "body": ["import { ${2:second} } from '${1:first}'"],
     "description": "Import Destructing"
   },
   "Import Everything": {
     "prefix": "ime",
-    "body": [
-      "import * as ${2:second} from '${1:first}'"
-    ],
+    "body": ["import * as ${2:second} from '${1:first}'"],
     "description": "Import Everything"
   },
   "Import No Module Name": {
     "prefix": "imn",
-    "body": [
-      "import '${1:first}'"
-    ],
+    "body": ["import '${1:first}'"],
     "description": "Import No Module Name"
   },
   "Import Prop Types": {
     "prefix": "impt",
-    "body": [
-      "import PropTypes from 'prop-types'"
-    ],
+    "body": ["import PropTypes from 'prop-types'"],
     "description": "Import Prop Types"
   },
   "Import React": {
     "prefix": "imr",
-    "body": [
-      "import React from 'react'"
-    ],
+    "body": ["import React from 'react'"],
     "description": "Import React"
   },
   "Import React Dom": {
     "prefix": "imrd",
-    "body": [
-      "import ReactDOM from 'react-dom'"
-    ],
+    "body": ["import ReactDOM from 'react-dom'"],
     "description": "Import React Dom"
   },
   "Import React With Component": {
     "prefix": "imrc",
-    "body": [
-      "import React, { Component } from 'react'"
-    ],
+    "body": ["import React, { Component } from 'react'"],
     "description": "Import React With Component"
   },
   "Import React With Component And Prop Types": {
@@ -546,9 +490,7 @@
   },
   "Import React With Memo": {
     "prefix": "imrm",
-    "body": [
-      "import React, { memo } from 'react'"
-    ],
+    "body": ["import React, { memo } from 'react'"],
     "description": "Import React With Memo"
   },
   "Import React With Memo And Prop Types": {
@@ -562,9 +504,7 @@
   },
   "Import React With Pure Component": {
     "prefix": "imrpc",
-    "body": [
-      "import React, { PureComponent } from 'react'"
-    ],
+    "body": ["import React, { PureComponent } from 'react'"],
     "description": "Import React With Pure Component"
   },
   "Import React With Pure Component And Prop Types": {
@@ -578,266 +518,182 @@
   },
   "Import Router Link": {
     "prefix": "imbrl",
-    "body": [
-      "import { Link } from 'react-router-dom'"
-    ],
+    "body": ["import { Link } from 'react-router-dom'"],
     "description": "Import Router Link"
   },
   "Import Router Nav Link": {
     "prefix": "imbrnl",
-    "body": [
-      "import { NavLink } from 'react-router-dom'"
-    ],
+    "body": ["import { NavLink } from 'react-router-dom'"],
     "description": "Import Router Nav Link"
   },
   "Import Router Setup": {
     "prefix": "imbrc",
-    "body": [
-      "import { Route, Switch, NavLink, Link } from 'react-router-dom'"
-    ],
+    "body": ["import { Route, Switch, NavLink, Link } from 'react-router-dom'"],
     "description": "Import Router Setup"
   },
   "Import Router Switch": {
     "prefix": "imbrs",
-    "body": [
-      "import { Switch } from 'react-router-dom'"
-    ],
+    "body": ["import { Switch } from 'react-router-dom'"],
     "description": "Import Router Switch"
   },
   "Import": {
     "prefix": "imp",
-    "body": [
-      "import ${2:second} from '${1:first}'"
-    ],
+    "body": ["import ${2:second} from '${1:first}'"],
     "description": "Import"
   },
   "Array prop type": {
     "prefix": "pta",
-    "body": [
-      "PropTypes.array"
-    ],
+    "body": ["PropTypes.array"],
     "description": "Array prop type"
   },
   "Array prop type required": {
     "prefix": "ptar",
-    "body": [
-      "PropTypes.array.isRequired"
-    ],
+    "body": ["PropTypes.array.isRequired"],
     "description": "Array prop type required"
   },
   "Bool prop type": {
     "prefix": "ptb",
-    "body": [
-      "PropTypes.bool"
-    ],
+    "body": ["PropTypes.bool"],
     "description": "Bool prop type"
   },
   "Bool prop type required": {
     "prefix": "ptbr",
-    "body": [
-      "PropTypes.bool.isRequired"
-    ],
+    "body": ["PropTypes.bool.isRequired"],
     "description": "Bool prop type required"
   },
   "Func prop type": {
     "prefix": "ptf",
-    "body": [
-      "PropTypes.func"
-    ],
+    "body": ["PropTypes.func"],
     "description": "Func prop type"
   },
   "Func prop type required": {
     "prefix": "ptfr",
-    "body": [
-      "PropTypes.func.isRequired"
-    ],
+    "body": ["PropTypes.func.isRequired"],
     "description": "Func prop type required"
   },
   "Number prop type": {
     "prefix": "ptn",
-    "body": [
-      "PropTypes.number"
-    ],
+    "body": ["PropTypes.number"],
     "description": "Number prop type"
   },
   "Number prop type required": {
     "prefix": "ptnr",
-    "body": [
-      "PropTypes.number.isRequired"
-    ],
+    "body": ["PropTypes.number.isRequired"],
     "description": "Number prop type required"
   },
   "Object prop type": {
     "prefix": "pto",
-    "body": [
-      "PropTypes.object"
-    ],
+    "body": ["PropTypes.object"],
     "description": "Object prop type"
   },
   "Object prop type required": {
     "prefix": "ptor",
-    "body": [
-      "PropTypes.object.isRequired"
-    ],
+    "body": ["PropTypes.object.isRequired"],
     "description": "Object prop type required"
   },
   "String prop type": {
     "prefix": "pts",
-    "body": [
-      "PropTypes.string"
-    ],
+    "body": ["PropTypes.string"],
     "description": "String prop type"
   },
   "String prop type required": {
     "prefix": "ptsr",
-    "body": [
-      "PropTypes.string.isRequired"
-    ],
+    "body": ["PropTypes.string.isRequired"],
     "description": "String prop type required"
   },
   "Anything that can be rendered: numbers, strings, elements or an array": {
     "prefix": "ptnd",
-    "body": [
-      "PropTypes.node"
-    ],
+    "body": ["PropTypes.node"],
     "description": "Anything that can be rendered: numbers, strings, elements or an array"
   },
   "Anything that can be rendered: numbers, strings, elements or an array required": {
     "prefix": "ptndr",
-    "body": [
-      "PropTypes.node.isRequired"
-    ],
+    "body": ["PropTypes.node.isRequired"],
     "description": "Anything that can be rendered: numbers, strings, elements or an array required"
   },
   "React element prop type": {
     "prefix": "ptel",
-    "body": [
-      "PropTypes.element"
-    ],
+    "body": ["PropTypes.element"],
     "description": "React element prop type"
   },
   "React element prop type required": {
     "prefix": "ptelr",
-    "body": [
-      "PropTypes.element.isRequired"
-    ],
+    "body": ["PropTypes.element.isRequired"],
     "description": "React element prop type required"
   },
   "Is an instance of a class prop type": {
     "prefix": "pti",
-    "body": [
-      "PropTypes.instanceOf($0)"
-    ],
+    "body": ["PropTypes.instanceOf($0)"],
     "description": "Is an instance of a class prop type"
   },
   "Is an instance of a class prop type required": {
     "prefix": "ptir",
-    "body": [
-      "PropTypes.instanceOf($0).isRequired"
-    ],
+    "body": ["PropTypes.instanceOf($0).isRequired"],
     "description": "Is an instance of a class prop type required"
   },
   "Prop type limited to specific values by treating it as an enum": {
     "prefix": "pte",
-    "body": [
-      "PropTypes.oneOf(['$0'])"
-    ],
+    "body": ["PropTypes.oneOf(['$0'])"],
     "description": "Prop type limited to specific values by treating it as an enum"
   },
   "Prop type limited to specific values by treating it as an enum required": {
     "prefix": "pter",
-    "body": [
-      "PropTypes.oneOf(['$0']).isRequired"
-    ],
+    "body": ["PropTypes.oneOf(['$0']).isRequired"],
     "description": "Prop type limited to specific values by treating it as an enum required"
   },
   "An object that could be one of many types": {
     "prefix": "ptet",
-    "body": [
-      "PropTypes.oneOfType([",
-      "  $0",
-      "])"
-    ],
+    "body": ["PropTypes.oneOfType([", "  $0", "])"],
     "description": "An object that could be one of many types"
   },
   "An object that could be one of many types required": {
     "prefix": "ptetr",
-    "body": [
-      "PropTypes.oneOfType([",
-      "  $0",
-      "]).isRequired"
-    ],
+    "body": ["PropTypes.oneOfType([", "  $0", "]).isRequired"],
     "description": "An object that could be one of many types required"
   },
   "An array of a certain type": {
     "prefix": "ptao",
-    "body": [
-      "PropTypes.arrayOf($0)"
-    ],
+    "body": ["PropTypes.arrayOf($0)"],
     "description": "An array of a certain type"
   },
   "An array of a certain type required": {
     "prefix": "ptaor",
-    "body": [
-      "PropTypes.arrayOf($0).isRequired"
-    ],
+    "body": ["PropTypes.arrayOf($0).isRequired"],
     "description": "An array of a certain type required"
   },
   "An object with property values of a certain type": {
     "prefix": "ptoo",
-    "body": [
-      "PropTypes.objectOf($0)"
-    ],
+    "body": ["PropTypes.objectOf($0)"],
     "description": "An object with property values of a certain type"
   },
   "An object with property values of a certain type required": {
     "prefix": "ptoor",
-    "body": [
-      "PropTypes.objectOf($0).isRequired"
-    ],
+    "body": ["PropTypes.objectOf($0).isRequired"],
     "description": "An object with property values of a certain type required"
   },
   "An object taking on a particular shape": {
     "prefix": "ptsh",
-    "body": [
-      "PropTypes.shape({",
-      "  $0",
-      "})"
-    ],
+    "body": ["PropTypes.shape({", "  $0", "})"],
     "description": "An object taking on a particular shape"
   },
   "An object taking on a particular shape required": {
     "prefix": "ptshr",
-    "body": [
-      "PropTypes.shape({",
-      "  $0",
-      "}).isRequired"
-    ],
+    "body": ["PropTypes.shape({", "  $0", "}).isRequired"],
     "description": "An object taking on a particular shape required"
   },
   "An object with warnings on extra properties": {
     "prefix": "ptex",
-    "body": [
-      "PropTypes.exact({",
-      "  $0",
-      "})"
-    ],
+    "body": ["PropTypes.exact({", "  $0", "})"],
     "description": "An object with warnings on extra properties"
   },
   "An object with warnings on extra properties required": {
     "prefix": "ptexr",
-    "body": [
-      "PropTypes.exact({",
-      "  $0",
-      "}).isRequired"
-    ],
+    "body": ["PropTypes.exact({", "  $0", "}).isRequired"],
     "description": "An object with warnings on extra properties required"
   },
   "Any prop type": {
     "prefix": "ptany",
-    "body": [
-      "PropTypes.any"
-    ],
+    "body": ["PropTypes.any"],
     "description": "Any prop type"
   },
   "React Native Component": {
@@ -972,9 +828,7 @@
   },
   "React Native Import": {
     "prefix": "imrn",
-    "body": [
-      "import { ${1:first} } from 'react-native'"
-    ],
+    "body": ["import { ${1:first} } from 'react-native'"],
     "description": "React Native Import"
   },
   "React Native Pure Component": {
@@ -1017,16 +871,12 @@
   },
   "React Native Styles": {
     "prefix": "rnstyle",
-    "body": [
-      "const styles = StyleSheet.create({${1:first}})"
-    ],
+    "body": ["const styles = StyleSheet.create({${1:first}})"],
     "description": "React Native Styles"
   },
   "Import Redux Connect": {
     "prefix": "redux",
-    "body": [
-      "import { connect } from 'react-redux'"
-    ],
+    "body": ["import { connect } from 'react-redux'"],
     "description": "Import Redux Connect"
   },
   "Redux Action": {
@@ -1042,9 +892,7 @@
   },
   "Redux Const": {
     "prefix": "rxconst",
-    "body": [
-      "export const ${1:first} = '${1:first}'"
-    ],
+    "body": ["export const ${1:first} = '${1:first}'"],
     "description": "Redux Const"
   },
   "Redux Reducer": {
@@ -1107,23 +955,17 @@
   },
   "Testing `describe` block": {
     "prefix": "desc",
-    "body": [
-      "describe('${1:first}', () => { ${2:second} })"
-    ],
+    "body": ["describe('${1:first}', () => { ${2:second} })"],
     "description": "Testing `describe` block"
   },
   "Testing asynchronous `it` block": {
     "prefix": "tita",
-    "body": [
-      "it('should ${1:first}', async () => { ${2:second} })"
-    ],
+    "body": ["it('should ${1:first}', async () => { ${2:second} })"],
     "description": "Testing asynchronous `it` block"
   },
   "Testing `it` block": {
     "prefix": "tit",
-    "body": [
-      "it('should ${1:first}', () => { ${2:second} })"
-    ],
+    "body": ["it('should ${1:first}', () => { ${2:second} })"],
     "description": "Testing `it` block"
   },
   "Create test component": {
@@ -1218,165 +1060,117 @@
   },
   "Testing `asynchronous test` block": {
     "prefix": "testa",
-    "body": [
-      "test('should ${1:first}', async () => { ${2:second} })"
-    ],
+    "body": ["test('should ${1:first}', async () => { ${2:second} })"],
     "description": "Testing `asynchronous test` block"
   },
   "Testing `test` block": {
     "prefix": "test",
-    "body": [
-      "test('should ${1:first}', () => { ${2:second} })"
-    ],
+    "body": ["test('should ${1:first}', () => { ${2:second} })"],
     "description": "Testing `test` block"
   },
   "Export Default": {
     "prefix": "exp",
-    "body": [
-      "export default ${1:first}"
-    ],
+    "body": ["export default ${1:first}"],
     "description": "Export Default"
   },
   "Export Destructing": {
     "prefix": "exd",
-    "body": [
-      "export { ${2:second} } from '${1:first}'"
-    ],
+    "body": ["export { ${2:second} } from '${1:first}'"],
     "description": "Export Destructing"
   },
   "Export As": {
     "prefix": "exa",
-    "body": [
-      "export { ${2:second} as ${3:third} } from '${1:first}'"
-    ],
+    "body": ["export { ${2:second} as ${3:third} } from '${1:first}'"],
     "description": "Export As"
   },
   "Export named function": {
     "prefix": "enf",
-    "body": [
-      "export const ${1:first} = (${2:second}) => {${3:third}}"
-    ],
+    "body": ["export const ${1:first} = (${2:second}) => {${3:third}}"],
     "description": "Export named function"
   },
   "Export default function": {
     "prefix": "edf",
-    "body": [
-      "export default (${1:first}) => {${2:second}}"
-    ],
+    "body": ["export default (${1:first}) => {${2:second}}"],
     "description": "Export default function"
   },
   "Export default named function": {
     "prefix": "ednf",
-    "body": [
-      "export default function ${1:first}(${2:second}) {${3:third}}"
-    ],
+    "body": ["export default function ${1:first}(${2:second}) {${3:third}}"],
     "description": "Export default named function"
   },
   "Creates a method inside a class": {
     "prefix": "met",
-    "body": [
-      "${1:first} = (${2:second}) => {${3:third}}"
-    ],
+    "body": ["${1:first} = (${2:second}) => {${3:third}}"],
     "description": "Creates a method inside a class"
   },
   "Creates a getter property inside a class": {
     "prefix": "pge",
-    "body": [
-      "get ${1:first}() {",
-      "  return this.${2:second}",
-      "}"
-    ],
+    "body": ["get ${1:first}() {", "  return this.${2:second}", "}"],
     "description": "Creates a getter property inside a class"
   },
   "Creates a setter property inside a class": {
     "prefix": "pse",
-    "body": [
-      "set ${1:first}(${2:second}) {${3:third}}"
-    ],
+    "body": ["set ${1:first}(${2:second}) {${3:third}}"],
     "description": "Creates a setter property inside a class"
   },
   "Creates a forEach statement": {
     "prefix": "fre",
-    "body": [
-      "${1:first}.forEach(${2:second} => {${3:third}})"
-    ],
+    "body": ["${1:first}.forEach(${2:second} => {${3:third}})"],
     "description": "Creates a forEach statement"
   },
   "Iterating over property names of iterable objects": {
     "prefix": "fof",
-    "body": [
-      "for(let ${1:first} of ${2:second}) {${3:third}}"
-    ],
+    "body": ["for(let ${1:first} of ${2:second}) {${3:third}}"],
     "description": "Iterating over property names of iterable objects"
   },
   "Iterating over property values of iterable objects": {
     "prefix": "fin",
-    "body": [
-      "for(let ${1:first} in ${2:second}) {${3:third}}"
-    ],
+    "body": ["for(let ${1:first} in ${2:second}) {${3:third}}"],
     "description": "Iterating over property values of iterable objects"
   },
   "Creates an anonymous function": {
     "prefix": "anfn",
-    "body": [
-      "(${1:first}) => { ${2:second} }"
-    ],
+    "body": ["(${1:first}) => { ${2:second} }"],
     "description": "Creates an anonymous function"
   },
   "Creates a named function": {
     "prefix": "nfn",
-    "body": [
-      "const ${1:first} = (${2:second}) => { ${3:third} }"
-    ],
+    "body": ["const ${1:first} = (${2:second}) => { ${3:third} }"],
     "description": "Creates a named function"
   },
   "Creates and assigns a local variable using object destructing": {
     "prefix": "dob",
-    "body": [
-      "const {${2:second}} = ${1:first}"
-    ],
+    "body": ["const {${2:second}} = ${1:first}"],
     "description": "Creates and assigns a local variable using object destructing"
   },
   "Creates and assigns a local variable using array destructing": {
     "prefix": "dar",
-    "body": [
-      "const [${2:second}] = ${1:first}"
-    ],
+    "body": ["const [${2:second}] = ${1:first}"],
     "description": "Creates and assigns a local variable using array destructing"
   },
   "Executes the given function at specified intervals": {
     "prefix": "sti",
-    "body": [
-      "setInterval(() => { ${1:first} }, ${2:second})"
-    ],
+    "body": ["setInterval(() => { ${1:first} }, ${2:second})"],
     "description": "Executes the given function at specified intervals"
   },
   "Executes the given function after the specified delay": {
     "prefix": "sto",
-    "body": [
-      "setTimeout(() => { ${1:first} }, ${2:second})"
-    ],
+    "body": ["setTimeout(() => { ${1:first} }, ${2:second})"],
     "description": "Executes the given function after the specified delay"
   },
   "Creates and returns a new Promise in the standard ES7 syntax": {
     "prefix": "prom",
-    "body": [
-      "return new Promise((resolve, reject) => { ${1:first} })"
-    ],
+    "body": ["return new Promise((resolve, reject) => { ${1:first} })"],
     "description": "Creates and returns a new Promise in the standard ES7 syntax"
   },
   "Creates and assigns a local variable using props destructing": {
     "prefix": "cp",
-    "body": [
-      "const { ${1:first} } = this.props"
-    ],
+    "body": ["const { ${1:first} } = this.props"],
     "description": "Creates and assigns a local variable using props destructing"
   },
   "Creates and assigns a local variable using state destructing": {
     "prefix": "cs",
-    "body": [
-      "const { ${1:first} } = this.state"
-    ],
+    "body": ["const { ${1:first} } = this.state"],
     "description": "Creates and assigns a local variable using state destructing"
   },
   "Adds a default constructor for it('', () => {})the class that contains props as arguments": {
@@ -1394,44 +1188,32 @@
   },
   "Creates empty state object. To be used in a constructor.": {
     "prefix": "est",
-    "body": [
-      "state = { ${1:first} }"
-    ],
+    "body": ["state = { ${1:first} }"],
     "description": "Creates empty state object. To be used in a constructor."
   },
   "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs.": {
     "prefix": "cdm",
-    "body": [
-      "componentDidMount() { ${1:first} }"
-    ],
+    "body": ["componentDidMount() { ${1:first} }"],
     "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
   },
   "Invoked before rendering when new props or state are being received. ": {
     "prefix": "scu",
-    "body": [
-      "shouldComponentUpdate(nextProps, nextState) { ${1:first} }"
-    ],
+    "body": ["shouldComponentUpdate(nextProps, nextState) { ${1:first} }"],
     "description": "Invoked before rendering when new props or state are being received. "
   },
   "Invoked immediately after the component's updates are flushed to the DOM.": {
     "prefix": "cdup",
-    "body": [
-      "componentDidUpdate(prevProps, prevState) { ${1:first}} "
-    ],
+    "body": ["componentDidUpdate(prevProps, prevState) { ${1:first}} "],
     "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
   "Invoked immediately before a component is unmounted from the DOM.": {
     "prefix": "cwun",
-    "body": [
-      "componentWillUnmount() {${1:first} }"
-    ],
+    "body": ["componentWillUnmount() {${1:first} }"],
     "description": "Invoked immediately before a component is unmounted from the DOM."
   },
   "Invoked right before calling the render method, both on the initial mount and on subsequent updates.": {
     "prefix": "gdsfp",
-    "body": [
-      "static getDerivedStateFromProps(props, state) {${1:first}}"
-    ],
+    "body": ["static getDerivedStateFromProps(props, state) {${1:first}}"],
     "description": "Invoked right before calling the render method, both on the initial mount and on subsequent updates."
   },
   "Called right before mutations are made (e.g. before the DOM is updated)": {
@@ -1443,53 +1225,37 @@
   },
   "Create React context": {
     "prefix": "rcontext",
-    "body": [
-      "const ${1:first} = React.createContext()"
-    ],
+    "body": ["const ${1:first} = React.createContext()"],
     "description": "Create React context"
   },
   "Create ref statement used inside constructor": {
     "prefix": "cref",
-    "body": [
-      "this.${1:first}Ref = React.createRef()"
-    ],
+    "body": ["this.${1:first}Ref = React.createRef()"],
     "description": "Create ref statement used inside constructor"
   },
   "Performs a shallow merge of nextState into current state": {
     "prefix": "ssf",
-    "body": [
-      "this.setState((state, props) => { return { ${1:first} }})"
-    ],
+    "body": ["this.setState((state, props) => { return { ${1:first} }})"],
     "description": "Performs a shallow merge of nextState into current state"
   },
   "Access component's props": {
     "prefix": "props",
-    "body": [
-      "this.props.${1:first}"
-    ],
+    "body": ["this.props.${1:first}"],
     "description": "Access component's props"
   },
   "Component State": {
     "prefix": "state",
-    "body": [
-      "this.state.${1:first}"
-    ],
+    "body": ["this.state.${1:first}"],
     "description": "Component State"
   },
   "Binds this to a method": {
     "prefix": "bnd",
-    "body": [
-      "this.${1:first} = this.${1:first}.bind(this)"
-    ],
+    "body": ["this.${1:first} = this.${1:first}.bind(this)"],
     "description": "Binds this to a method"
   },
   "Comment Big Block": {
     "prefix": "cmmb",
-    "body": [
-      "/**",
-      " * ${1:first}",
-      " */"
-    ],
+    "body": ["/**", " * ${1:first}", " */"],
     "description": "Comment Big Block"
   },
   "Hoc Component With Redux": {
@@ -1535,9 +1301,7 @@
   },
   "Typeof Snippet": {
     "prefix": "tpf",
-    "body": [
-      "typeof ${1:first}"
-    ],
+    "body": ["typeof ${1:first}"],
     "description": "Typeof Snippet"
   }
 }

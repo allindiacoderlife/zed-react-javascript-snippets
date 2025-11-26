@@ -4,5 +4,4 @@ version = "0.0.1"
 schema_version = 1
 authors = ["Chirag Saxena"]
 description = "A collection of useful ES7+ React/Redux/React-Native/JavaScript/TypeScript snippets to speed up your development."
-repository = "https://github.com/allindiacoderlife/zed-react-javascript-snippets.gits"
-snippets = ["./snippets/jsx.json", "./snippets/tsx.json", "./snippets/javascript.json", "./snippets/typescript.json"]
+repository = "https://github.com/allindiacoderlife/zed-react-javascript-snippets.git"
