@@ -11,17 +11,22 @@ A comprehensive collection of React, JavaScript, TypeScript, and React Native sn
 
 ## ✨ Features
 
-This extension provides snippets for:
+This extension provides comprehensive snippets for:
 
-- **React Components** - Functional, Class, Pure, Memo components
-- **TypeScript Support** - TypeScript-specific React components
-- **React Hooks** - useState, useEffect, useCallback, and more
-- **Redux** - Actions, reducers, selectors, and Redux Toolkit
-- **React Native** - Mobile components with and without styles
-- **PropTypes** - Complete PropTypes definitions
-- **Console Methods** - Various console logging utilities
-- **Testing** - Jest and React Testing Library snippets
-- **ES6+ Utilities** - Imports, exports, destructuring, and more
+- **React Components** - Functional, Class, Pure, Memo components (JavaScript/JSX)
+- **TypeScript React Components** - TypeScript-specific React and React Native components
+- **React Hooks** - useState, useEffect, useCallback, useMemo, useRef, and more
+- **Redux** - Actions, reducers, selectors, Redux Toolkit slices, and connect patterns
+- **React Native** - Mobile components with and without StyleSheet
+- **PropTypes** - Complete PropTypes definitions and validation
+- **Console Methods** - Comprehensive console logging utilities (log, warn, error, table, time, etc.)
+- **Testing** - Jest and React Testing Library test blocks
+- **ES6+ JavaScript** - Modern JavaScript features (arrow functions, destructuring, promises, async/await)
+- **DOM Manipulation** - querySelector, event listeners, and DOM methods
+- **Imports/Exports** - ES6 module system, React Router, and more
+- **Class Features** - Classes, methods, getters, setters, static methods
+- **Array/Object Methods** - map, filter, reduce, forEach, Object utilities
+- **Utility Functions** - Loops, conditionals, promises, fetch, localStorage, and more
 
 ## 📝 Snippet Categories
 
@@ -115,11 +120,10 @@ This extension provides snippets for:
 | `rxslice` | Redux Toolkit Slice |
 | `reduxmap` | mapStateToProps & mapDispatchToProps |
 
-### Imports
+### React Imports
 
 | Prefix | Description |
 |--------|-------------|
-| `imp` | Import module |
 | `imr` | Import React |
 | `imrc` | Import React with Component |
 | `imrcp` | Import React with Component and PropTypes |
@@ -129,10 +133,6 @@ This extension provides snippets for:
 | `imrpcp` | Import React with PureComponent and PropTypes |
 | `impt` | Import PropTypes |
 | `imrd` | Import ReactDOM |
-| `imd` | Import destructured |
-| `ima` | Import as |
-| `ime` | Import everything as |
-| `imn` | Import without module name |
 | `imrn` | Import from React Native |
 | `imbr` | Import BrowserRouter |
 | `imbrl` | Import Router Link |
@@ -140,17 +140,6 @@ This extension provides snippets for:
 | `imbrs` | Import Router Switch |
 | `imbrc` | Import Router components |
 | `imrr` | Import BrowserRouter with Route and NavLink |
-
-### Exports
-
-| Prefix | Description |
-|--------|-------------|
-| `exp` | Export default |
-| `exd` | Export destructured |
-| `exa` | Export as |
-| `enf` | Export named function |
-| `edf` | Export default function |
-| `ednf` | Export default named function |
 
 ### PropTypes
 
@@ -188,27 +177,6 @@ This extension provides snippets for:
 | `ptexr` | PropTypes exact required |
 | `ptany` | PropTypes any |
 
-### Console Methods
-
-| Prefix | Description |
-|--------|-------------|
-| `clg` | console.log |
-| `clo` | console.log with label |
-| `clj` | console.log JSON.stringify |
-| `cas` | console.assert |
-| `ccl` | console.clear |
-| `cco` | console.count |
-| `cdi` | console.dir |
-| `cer` | console.error |
-| `cgr` | console.group |
-| `cge` | console.groupEnd |
-| `ctr` | console.trace |
-| `ctm` | console.time |
-| `cte` | console.timeEnd |
-| `cwa` | console.warn |
-| `cin` | console.info |
-| `ctl` | console.table |
-
 ### React Context & Refs
 
 | Prefix | Description |
@@ -237,27 +205,12 @@ This extension provides snippets for:
 | `hoc` | Higher Order Component |
 | `hocredux` | Higher Order Component with Redux |
 
-### JavaScript Utilities
+### React-Specific Utilities
 
 | Prefix | Description |
 |--------|-------------|
 | `cp` | Destructure props |
 | `cs` | Destructure state |
-| `dob` | Destructure object |
-| `dar` | Destructure array |
-| `nfn` | Named arrow function |
-| `anfn` | Anonymous arrow function |
-| `met` | Class method |
-| `pge` | Getter |
-| `pse` | Setter |
-| `fre` | forEach |
-| `fof` | for...of loop |
-| `fin` | for...in loop |
-| `sti` | setInterval |
-| `sto` | setTimeout |
-| `prom` | Promise |
-| `tpf` | typeof |
-| `cmmb` | Comment block |
 
 ## 🚀 Usage
 
@@ -279,20 +232,283 @@ const ComponentName = () => {
 export default ComponentName
 ```
 
+### Quick Start Examples
+
+| Prefix | Output                                   | Description           |
+| ------ | ---------------------------------------- | --------------------- |
+| `log`  | `console.log($0)`                        | Console log statement |
+| `af`   | `const name = (params) => {}`            | Arrow function        |
+| `asf`  | `async function name() {}`               | Async function        |
+| `for`  | `for (let i = 0; i < array.length; i++)` | For loop              |
+| `fetch`| `fetch(url).then().catch()`              | Fetch API call        |
+
+## 📋 JavaScript & Modern ES6+ Snippets
+
+### Console Methods
+
+- `log` / `clg` - Console log
+- `clo` - Console log with label
+- `clj` - Console log JSON.stringify
+- `warn` / `cwa` - Console warn
+- `error` / `cer` - Console error
+- `table` / `ctl` - Console table
+- `time` / `ctm` - Console time
+- `cte` - Console timeEnd
+- `cas` - Console assert
+- `ccl` - Console clear
+- `cco` - Console count
+- `cdi` - Console dir
+- `cgr` - Console group
+- `cge` - Console groupEnd
+- `ctr` - Console trace
+- `cin` - Console info
+
+### Functions
+
+- `function` - Function declaration
+- `af` / `nfn` - Arrow function (named)
+- `afi` - Arrow function (implicit return)
+- `anfn` - Arrow function (anonymous)
+- `asf` - Async function
+- `aaf` - Async arrow function
+- `fn` - Anonymous function
+- `iife` - Immediately Invoked Function Expression
+- `iiafe` - Async IIFE
+
+### Loops & Iteration
+
+- `for` - For loop
+- `forof` / `fof` - For...of loop
+- `forin` / `fin` - For...in loop
+- `while` - While loop
+- `dowhile` - Do...while loop
+- `fre` - Array forEach
+- `map` - Array map
+- `filter` - Array filter
+- `reduce` - Array reduce
+- `find` - Array find
+- `findi` - Array findIndex
+- `some` - Array some
+- `every` - Array every
+
+### Conditionals
+
+- `if` - If statement
+- `ife` - If...else statement
+- `ei` - Else if statement
+- `ter` - Ternary operator
+- `switch` - Switch statement
+
+### Error Handling
+
+- `tc` - Try...catch block
+- `tcf` - Try...catch...finally
+- `ther` - Throw error
+- `cerr` - Custom error class
+
+### Promises & Async
+
+- `promise` / `prom` - New Promise
+- `thenc` - Promise then/catch
+- `await` - Await expression
+- `awaitc` - Await with try/catch
+
+### Classes
+
+- `class` - Class declaration
+- `clm` - Class with method
+- `clx` - Class extends
+- `met` - Class method
+- `get` / `pge` - Getter method
+- `set` / `pse` - Setter method
+- `sm` - Static method
+
+### Modules (Import/Export)
+
+**Imports:**
+- `imp` - Import default
+- `imn` / `imd` - Import named/destructured
+- `ima` / `ime` - Import all (as *)
+- `imd` - Dynamic import (await)
+
+**Exports:**
+- `exp` - Export default
+- `exd` - Export destructured
+- `exa` - Export as
+- `exn` - Export named
+- `enf` - Export named function
+- `edf` - Export default function
+- `ednf` - Export default named function
+- `exf` - Export function
+- `exc` - Export const
+
+### Variables & Destructuring
+
+**Declarations:**
+- `const` - Const declaration
+- `let` - Let declaration
+- `var` - Var declaration
+
+**Destructuring:**
+- `dsta` / `dar` - Array destructuring
+- `dsto` / `dob` - Object destructuring
+- `spa` - Spread array
+- `spo` - Spread object
+- `rp` - Rest parameters
+
+### Objects
+
+- `obj` - Object literal
+- `om` - Object with method
+- `os` - Object shorthand
+- `oc` - Object computed property
+- `ok` - Object.keys()
+- `ov` - Object.values()
+- `oe` - Object.entries()
+- `oa` - Object.assign()
+- `ofr` - Object.freeze()
+- `oseal` - Object.seal()
+- `ocr` - Object.create()
+
+### Arrays & Collections
+
+- `array` - Array literal
+- `afrom` - Array.from()
+- `aof` - Array.of()
+- `nset` - New Set
+- `nmap` - New Map
+- `nws` - New WeakSet
+- `nwm` - New WeakMap
+
+### Strings
+
+- `tl` - Template literal
+- `tt` - Tagged template
+- `match` - String match
+- `replace` - String replace
+- `split` - String split
+- `trim` - String trim
+- `includes` - String includes
+- `startswith` - String startsWith
+- `endswith` - String endsWith
+- `padstart` - String padStart
+- `padend` - String padEnd
+- `repeat` - String repeat
+
+### Timers
+
+- `sto` / `sti` - setTimeout / setInterval
+- `si` - setInterval
+- `cto` - clearTimeout
+- `ci` - clearInterval
+
+### Fetch & JSON
+
+- `fetch` - Fetch API
+- `feta` - Fetch async/await
+- `fetp` - Fetch POST request
+- `jsp` - JSON.parse()
+- `jss` - JSON.stringify()
+- `jssp` - JSON.stringify() (pretty)
+
+### DOM Manipulation
+
+- `qs` - querySelector
+- `qsa` - querySelectorAll
+- `gid` - getElementById
+- `gcl` - getElementsByClassName
+- `gt` - getElementsByTagName
+- `cel` - createElement
+- `ael` - addEventListener
+- `rel` - removeEventListener
+- `domr` - DOMContentLoaded
+- `wl` - Window load event
+- `raf` - requestAnimationFrame
+
+### Storage
+
+- `lss` - localStorage.setItem()
+- `lsg` - localStorage.getItem()
+- `lsr` - localStorage.removeItem()
+- `lsc` - localStorage.clear()
+- `sss` - sessionStorage.setItem()
+- `ssg` - sessionStorage.getItem()
+
+### Advanced Features
+
+- `gen` - Generator function
+- `agen` - Async generator
+- `proxy` - Proxy object
+- `rget` - Reflect.get()
+- `sym` - Symbol
+- `symf` - Symbol.for()
+
+### Regular Expressions
+
+- `re` - RegExp pattern
+- `ret` - RegExp test
+
+### Math & Date
+
+- `mra` - Math.random()
+- `mfl` - Math.floor()
+- `mce` - Math.ceil()
+- `mro` - Math.round()
+- `mmax` - Math.max()
+- `mmin` - Math.min()
+- `dnow` - Date.now()
+- `ndate` - New Date()
+- `diso` - ISO date string
+
+### Operators & Type Checking
+
+- `tof` / `tpf` - typeof check
+- `iof` - instanceof check
+- `nc` - Nullish coalescing (??)
+- `oc` - Optional chaining (?.)
+
+### Documentation & Comments
+
+- `cmt` / `cmmb` - Comment block
+- `jsdoc` - JSDoc function documentation
+- `us` - Use strict mode
+
+## 🎯 Smart Placeholders
+
+All snippets include intelligent placeholders that enhance your coding workflow:
+
+- **Tab Navigation**: Press `Tab` to jump between placeholders in logical order
+- **Auto-Fill Component Names**: Many React snippets use `${TM_FILENAME_BASE}` to automatically name components based on your file name
+- **Smart Defaults**: Placeholders include sensible default values (e.g., `ComponentName`, `props`, `state`)
+- **Contextual Hints**: Placeholder names provide context about what should be entered
+- **Multiple Variations**: Many snippets have variants (with/without PropTypes, with/without Redux, etc.)
+
+### Example Workflow
+
+1. Type snippet prefix (e.g., `rafce`)
+2. Press `Tab` to expand
+3. Component name auto-fills from filename or use placeholder
+4. Press `Tab` to move to next editable section
+5. Continue until snippet is complete
+
 ## 🎯 Tips
 
 - Use `${TM_FILENAME_BASE}` placeholders to auto-fill component names based on your file name
 - Navigate through snippet placeholders using `Tab`
 - Most snippets support multiple variations (with/without PropTypes, with/without Redux, etc.)
-- TypeScript snippets are available in `.ts` and `.tsx` files
-- React Native snippets work in all JavaScript/TypeScript contexts
+- TypeScript snippets are available within JavaScript files
+- React Native snippets work in all JavaScript contexts
+- Modern JavaScript utilities support ES6+ features (arrow functions, destructuring, async/await)
+- DOM manipulation snippets work seamlessly with vanilla JavaScript projects
+- All console methods include proper placeholder positioning for quick debugging
 
 ## 📄 Supported File Types
 
-- JavaScript (`.js`)
-- JSX (`.jsx`)
-- TypeScript (`.ts`)
-- TSX (`.tsx`)
+This extension provides snippets for JavaScript files with full React/JSX support:
+- **JavaScript (`.js`)** - All JavaScript and JSX/React snippets
+- **JSX (`.jsx`)** - All JavaScript and JSX/React snippets
+
+**Note:** The snippets work in both `.js` and `.jsx` files, supporting modern React development where JSX is commonly used in `.js` files. TypeScript support (`.ts`, `.tsx`) requires a separate TypeScript-specific extension.
 
 ## 🤝 Contributing
 
